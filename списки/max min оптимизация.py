@@ -8,18 +8,10 @@ for i in range(n):
     print(a[i], end=' ')
 print()
 # код начинается отсюда...
-maximum = a[0]
 indexmaxsimum = 0
-minimum = a[0]
-indexminimum = 0
 for i in range(n):
-    if a[i] > maximum:
-        maximum = a[i]
+    if a[i] > a[indexmaxsimum]:
         indexmaxsimum = i
-    if a[i]<minimum:
-        minimum = a[i]
-        indexminimum = i
-print(minimum,indexminimum)
-print(maximum, indexmaxsimum)
-print(max(a))
+print(a[indexmaxsimum], indexmaxsimum)
+
 
